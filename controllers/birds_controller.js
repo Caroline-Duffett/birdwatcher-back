@@ -19,9 +19,8 @@ router.post('/birds', (req, res) => {
 
 // Read Route
 router.get('/birds', (req, res) => {
-  Birds.find({}, (err, foundBird) => {
-    console.log();
-    res.json(foundBird)
+  Birds.find({}, (err, foundBirds) => {
+    res.json(foundBirds)
   })
 })
 
@@ -38,5 +37,13 @@ router.put('/birds/:id', (req, res) => {
     res.json(updatedBird)
   })
 })
+
+// Show Route
+router.get('/birds/:id', (req, res) => {
+  Birds.findById(req.params.id, (err, foundBird) => {
+    res.json(foundBird)
+  })
+})
+
 
 module.exports = router
