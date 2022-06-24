@@ -13,7 +13,11 @@ const Birds = require('../models/bird.js')
 // Create Route
 router.post('/birds', (req, res) => {
   Birds.create(req.body, (err, addBird) => {
-    res.json(addBird)
+    if (err) {
+      console.log(err);
+    } else {
+      res.json(addBird)
+    }
   })
 })
 
