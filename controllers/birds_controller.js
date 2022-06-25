@@ -1,26 +1,29 @@
 const express = require('express')
 const router = express.Router()
 const Birds = require('../models/bird.js')
-//const seedData = require('../models/seeddata.js')
 
-
-// router.get('/birds/seed', (req, res) => {
-//   Birds.create(seedData, (err, data) => {
-//     res.json(data)
-//   })
-// })
 
 // Create Route
 router.post('/birds', (req, res) => {
   Birds.create(req.body, (err, addBird) => {
-    res.json(addBird)
+    if (err) {
+      console.log(req.body);
+      console.log(err);
+    } else {
+      res.json(addBird)
+    }
   })
 })
 
 // Read Route
 router.get('/birds', (req, res) => {
   Birds.find({}, (err, foundBirds) => {
-    res.json(foundBirds)
+    if (err) {
+      console.log(req.body);
+      console.log(err);
+    } else {
+      res.json(foundBirds)
+    }
   })
 })
 
@@ -41,7 +44,12 @@ router.put('/birds/:id', (req, res) => {
 // Show Route
 router.get('/birds/:id', (req, res) => {
   Birds.findById(req.params.id, (err, foundBird) => {
-    res.json(foundBird)
+    if (err) {
+      console.log(req.body);
+      console.log(err);
+    } else {
+      res.json(foundBird)
+    }
   })
 })
 
