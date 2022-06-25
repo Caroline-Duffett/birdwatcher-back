@@ -40,6 +40,11 @@ app.use(cors())
 //___________________
 app.use(birdsController)
 
+// redirect for heroku
+app.get('/', (req, res) => {
+  res.redirect('/birds')
+})
+
 
 //___________________
 // Listener
