@@ -6,7 +6,7 @@ const Stats = require('./stats.js')
 const birdSchema = new mongoose.Schema({
   name: {type:String, required:true},
   scientificName: {type:String, required:true},
-  image: {type:String, required:true},
+  image: {type: URL, required:true},
   location: {type: String, required:true},
   status: {type: String, required:true},
   description: {type: String, required:true},
