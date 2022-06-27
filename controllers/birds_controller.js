@@ -15,6 +15,13 @@ router.post('/birds', (req, res) => {
   })
 })
 
+// Search Route
+router.post('/getbirds', (req, res) => {
+  let payload = req.body.payload;
+  res.json({payload: payload})
+})
+
+
 // Read Route
 router.get('/birds', (req, res) => {
   Birds.find({}, (err, foundBirds) => {
