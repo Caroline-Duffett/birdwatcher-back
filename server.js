@@ -12,6 +12,7 @@ require('dotenv').config()
 // Controllers
 //___________________
 const birdsController = require('./controllers/birds_controller.js')
+const searchController = require('./controllers/search_controller.js')
 
 
 //___________________
@@ -39,6 +40,7 @@ app.use(cors())
 // CRUD Routes
 //___________________
 app.use(birdsController)
+app.use(searchController)
 
 // redirect for heroku
 app.get('/', (req, res) => {
