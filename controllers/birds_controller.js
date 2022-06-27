@@ -16,9 +16,10 @@ router.post('/birds', (req, res) => {
 })
 
 // Search Route
-router.post('/getbirds', (req, res) => {
+router.post('/birds/getbirds', async (req, res) => {
   let payload = req.body.payload;
-  res.json({payload: payload})
+  let search = await Brids.find({name: {$regex: new RegExp('^' + payload + '.*', 'i')}}).exec();
+  res.json({payload: search})
 })
 
 
