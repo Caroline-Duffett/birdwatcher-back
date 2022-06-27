@@ -12,6 +12,7 @@ const birdSchema = new mongoose.Schema({
   nesting: {type: String, required:true},
   behavior: {type: String, required:true},
   conservationStatus: {type: String, required:true},
+  region: {type: String, required:true},
   description: {type: String, required:true},
 })
 
