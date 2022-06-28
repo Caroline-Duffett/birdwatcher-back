@@ -35,8 +35,8 @@ router.delete('/birds/:id', (req, res) => {
   })
 })
 
-// Search Route Name
-router.post('/search/name', async (req, res) => {
+// Search Route (Name)
+router.post('/birds/search', async (req, res) => {
   console.log('backend search route');
   console.log(req.body.payload);
   let payload = req.body.payload;
