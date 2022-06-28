@@ -35,6 +35,15 @@ router.delete('/birds/:id', (req, res) => {
   })
 })
 
+// Search Route Name
+router.post('/search/name', async (req, res) => {
+  console.log('backend search route');
+  console.log(req.body.payload);
+  let payload = req.body.payload;
+  let search = await Brids.find({name: {$regex: new RegExp('^' + payload + '.*', 'i')}}).exec();
+  res.json({payload: search})
+})
+
 // Update Route
 router.put('/birds/:id', (req, res) => {
   Birds.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updatedBird) => {
