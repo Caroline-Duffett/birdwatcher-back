@@ -15,7 +15,6 @@ router.post('/birds', (req, res) => {
   })
 })
 
-
 // Read Route
 router.get('/birds', (req, res) => {
   Birds.find({}, (err, foundBirds) => {
@@ -33,15 +32,6 @@ router.delete('/birds/:id', (req, res) => {
   Birds.findByIdAndDelete(req.params.id, (err, deletedBird) => {
     res.json(deletedBird)
   })
-})
-
-// Search Route (Name)
-router.post('/birds/search', async (req, res) => {
-  console.log('backend search route');
-  console.log(req.body.payload);
-  let payload = req.body.payload;
-  let search = await Brids.find({name: {$regex: new RegExp('^' + payload + '.*', 'i')}}).exec();
-  res.json({payload: search})
 })
 
 // Update Route
@@ -65,3 +55,20 @@ router.get('/birds/:id', (req, res) => {
 
 
 module.exports = router
+
+
+
+
+//==========================================================================================================//
+//                                                Graveyard
+//==========================================================================================================//
+//--------------------------------------------------------------------------------- Search Route Attempt ---//
+  // // Search Route (Name)
+  // router.post('/birds/search', async (req, res) => {
+  //   console.log('backend search route');
+  //   console.log(req.body.payload);
+  //   let payload = req.body.payload;
+  //   let search = await Brids.find({name: {$regex: new RegExp('^' + payload + '.*', 'i')}}).exec();
+  //   res.json({payload: search})
+  // })
+//----------------------------------------------------------------------------------------------------------//
