@@ -6,6 +6,7 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const app = express()
 require('dotenv').config()
+const session = require('express-session')
 
 
 //___________________
@@ -14,6 +15,7 @@ require('dotenv').config()
 const birdsController = require('./controllers/birds_controller.js')
 const usersController = require('./controllers/users_controller.js')
 const usersBirdsController = require('./controllers/usersBirds_controller.js')
+const sessionsController = require('./controllers/sessions_controller.js')
 
 
 //___________________
@@ -35,6 +37,14 @@ const MONGODB_URI = process.env.MONGODB_URI
 //___________________
 app.use(express.json())
 app.use(cors())
+app.use(
+  session({
+    secret: process.env.SECRET, //a random string do not copy this value or your stuff will get hacked
+    resave: false, // default more info: https://www.npmjs.com/package/express-session#resave
+    saveUninitialized: false // default  more info: https://www.npmjs.com/package/express-session#resave
+  })
+)
+
 
 
 //___________________
@@ -43,6 +53,7 @@ app.use(cors())
 app.use(birdsController)
 app.use(usersController)
 app.use(usersBirdsController)
+app.use(sessionsController)
 
 // redirect for heroku
 app.get('/', (req, res) => {
