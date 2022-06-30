@@ -10,25 +10,58 @@ router.get('/createaccount', (req, res) => {
 })
 
 
+// router.post('/createaccount', (req, res) => {
+//   req.body.password = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(10))
+//   Users.create(req.body, (err, createdUser) => {
+//     console.log(createdUser);
+//     if(err){
+//       console.log(err);
+//       res.json('username taken')
+//       res.json(err.message)
+//     } else {
+//       console.log('user is created', createdUser);
+//       res.json(createdUser)
+//     }
+//   })
+// });
+
+//Attempt to change salt status
 router.post('/createaccount', (req, res) => {
   req.body.password = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(10))
   Users.create(req.body, (err, createdUser) => {
-    console.log(createdUser);
-    if(err){
-      console.log(err);
-      res.json('username taken')
-      res.json(err.message)
-    } else {
-      console.log('user is created', createdUser);
-      res.json(createdUser)
-    }
+    res.status(201).json({
+      status:201,
+      message: "user created"
+    })
+
+
+
+
+    //console.log(createdUser);
+    // if (err) {
+    //   console.log(err);
+    //   res.json('username taken')
+    //   res.json(err.message)
+    // } else {
+    //   console.log('user is created', createdUser);
+    //   res.json(createdUser)
+    // }
   })
 });
+
+
+
+
+
+
+
+
 
 
 router.put('/login', (req, res) => {
   Users.findOne({username: req.body.username}, (err, foundUser) => {
     if(err) {
+      console.log(err);
       res.json('Oops, there was an error. Please try again')
     } else {
       if(!foundUser){
