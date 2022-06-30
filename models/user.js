@@ -4,17 +4,7 @@ const Schema = mongoose.Schema
 const userSchema = Schema({
   username: { type: String, unique: true, required: true },
   password: String,
-  admin: Boolean,
-  usersBirds: [
-    {
-      birdName: String,
-      numberOfBirds: Number,
-      date: Date,
-      location: String,
-      comments: String,
-      img: String
-    }
-  ]
+  admin: Boolean
 })
 
 const User = mongoose.model('User', userSchema)
@@ -45,4 +35,11 @@ module.exports = User
 //       "img": "url"
 //     }
 //   ]
+// }
+
+//
+// {
+//     "username": "admin",
+//     "password": "admin",
+//     "admin": true
 // }
