@@ -10,6 +10,12 @@ const Users = require('../models/user.js')
 
 // on sessions form submit (log in)
 sessions.post('/sessions', (req, res) => {
+  // console.log('req.headers');
+  // console.log(req.headers);
+  // console.log("res.headers");
+  // console.log(res.headers); //undefined
+  // console.log('res');
+  // console.log(res);
   Users.findOne({ username: req.body.username }, (err, foundUser) => {
     if (err) {
       console.log(err)
@@ -23,7 +29,11 @@ sessions.post('/sessions', (req, res) => {
         req.session.currentUser = foundUser
         res.json('user found!')
         console.log('user found');
-        console.log(foundUser);
+        // console.log(foundUser);
+        // console.log('req.session');
+        console.log(req.session);
+      //   console.log('req.session.cookie');
+      //   console.log(req.session.cookie);
       } else {
         res.json('Password does not match')
         console.log('password does not match');

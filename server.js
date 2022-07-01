@@ -45,10 +45,12 @@ app.use(
     secret: process.env.SECRET, //a random string do not copy this value or your stuff will get hacked
     resave: false,
     saveUninitialized: false,
+    //cookie: { secure: true } //did not do anything
     //cookie: { secure: false }, // did not work and also propably best
     //cookie: {httpOnly: false} //did not work
   })
 )
+//app.set('trust proxy', 1) //did not work
 
 
 
