@@ -8,12 +8,12 @@ const Users = require('../models/user.js')
 //   res.render({ currentUser: req.session.currentUser })
 // })
 
-// sessions.get('/sessions', (req, res) => {
-//   //res.render('sessions/new.ejs', { currentUser: req.session.currentUser })
-//   //res.render({ currentUser: req.session.currentUser })
-//   //console.log(req.session.currentUser);
-//   res.json({ currentUser: req.session.currentUser })
-// })
+sessions.get('/sessions', (req, res) => {
+  //res.render('sessions/new.ejs', { currentUser: req.session.currentUser })
+  //res.render({ currentUser: req.session.currentUser })
+  //console.log(req.session.currentUser);
+  res.json({ currentUser: req.session.currentUser })
+})
 
 
 
@@ -46,6 +46,7 @@ sessions.post('/sessions', (req, res) => {
         //res.json('user found!') //without app won't set session
         console.log('user found');
         res.json(req.session.currentUser)
+        console.log(req.session.currentUser);
       } else {
         res.json('Password does not match')
         console.log('password does not match');
@@ -58,6 +59,7 @@ sessions.delete('/sessions', (req, res) => {
   req.session.destroy(() => {
     res.json('logged out')
     console.log('logged out');
+    console.log(req.session);
   })
 })
 
