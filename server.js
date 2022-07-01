@@ -39,7 +39,8 @@ const MONGODB_URI = process.env.MONGODB_URI
 //app.use(express.static('public'))
 //app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
-app.use(cors())
+//app.use(cors())
+app.use(cors({credentials: true, origin: 'http://localhost:4200'}));
 app.use(
   session({
     secret: process.env.SECRET, //a random string do not copy this value or your stuff will get hacked
