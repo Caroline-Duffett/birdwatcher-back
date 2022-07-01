@@ -8,6 +8,22 @@ const Users = require('../models/user.js')
 //   res.render({ currentUser: req.session.currentUser })
 // })
 
+// sessions.get('/sessions', (req, res) => {
+//   //res.render('sessions/new.ejs', { currentUser: req.session.currentUser })
+//   //res.render({ currentUser: req.session.currentUser })
+//   //console.log(req.session.currentUser);
+//   res.json({ currentUser: req.session.currentUser })
+// })
+
+
+
+// sessions.get('/sessions', (req, res) => {
+//   req.session.user ? res.status(200).send({loggedIn: true}) : res.status(200).send({loggedIn: false})
+// })
+
+
+
+
 // on sessions form submit (log in)
 sessions.post('/sessions', (req, res) => {
   // console.log('req.headers');
@@ -27,13 +43,15 @@ sessions.post('/sessions', (req, res) => {
     } else {
       if (bcrypt.compareSync(req.body.password, foundUser.password)) {
         req.session.currentUser = foundUser
-        res.json('user found!')
+        res.json('user found!') //without app won't set session
         console.log('user found');
         // console.log(foundUser);
+        //res.json(founduser)
+        // console.log(foundUser);
         // console.log('req.session');
-        console.log(req.session);
-      //   console.log('req.session.cookie');
-      //   console.log(req.session.cookie);
+        // console.log(req.session);
+        // console.log('req.session.cookie');
+        //  console.log(req.session.cookie);
       } else {
         res.json('Password does not match')
         console.log('password does not match');
