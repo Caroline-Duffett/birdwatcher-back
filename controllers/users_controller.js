@@ -28,7 +28,7 @@ router.post('/createaccount', (req, res) => {
   })
 });
 
-// //Attempt to change salt status
+// // //Attempt to change salt status
 // router.post('/createaccount', (req, res) => {
 //   req.body.password = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(10))
 //   Users.create(req.body, (err, createdUser) => {
@@ -77,22 +77,22 @@ router.post('/createaccount', (req, res) => {
 // });
 
 
-//POST
-router.post('/login', (req, res) => {
-  Users.findOne({username: req.body.username}, (err, foundUser) => {
-    if(err) {
-      console.log(err);
-      res.json('Oops, there was an error. Please try again')
-    } else {
-      if(!foundUser){
-        res.json('Username and password do not match. Please try again.')
-      } else if(bcrypt.compareSync(req.body.password, foundUser.password)) {
-        res.json({username: foundUser.username})
-      } else {
-        res.json('Username and password do not match. Please try again.')
-      }
-    }
-  })
-});
+// //POST
+// router.post('/login', (req, res) => {
+//   Users.findOne({username: req.body.username}, (err, foundUser) => {
+//     if(err) {
+//       console.log(err);
+//       res.json('Oops, there was an error. Please try again')
+//     } else {
+//       if(!foundUser){
+//         res.json('Username and password do not match. Please try again.')
+//       } else if(bcrypt.compareSync(req.body.password, foundUser.password)) {
+//         res.json({username: foundUser.username})
+//       } else {
+//         res.json('Username and password do not match. Please try again.')
+//       }
+//     }
+//   })
+// });
 
 module.exports = router

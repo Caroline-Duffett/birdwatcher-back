@@ -9,6 +9,7 @@ require('dotenv').config()
 const session = require('express-session')
 
 
+
 //___________________
 // Controllers
 //___________________
@@ -35,6 +36,8 @@ const MONGODB_URI = process.env.MONGODB_URI
 //___________________
 // Middleware
 //___________________
+//app.use(express.static('public'))
+//app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 app.use(cors())
 app.use(
