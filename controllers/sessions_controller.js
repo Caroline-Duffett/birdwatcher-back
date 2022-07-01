@@ -43,15 +43,9 @@ sessions.post('/sessions', (req, res) => {
     } else {
       if (bcrypt.compareSync(req.body.password, foundUser.password)) {
         req.session.currentUser = foundUser
-        res.json('user found!') //without app won't set session
+        //res.json('user found!') //without app won't set session
         console.log('user found');
-        // console.log(foundUser);
-        //res.json(founduser)
-        // console.log(foundUser);
-        // console.log('req.session');
-        // console.log(req.session);
-        // console.log('req.session.cookie');
-        //  console.log(req.session.cookie);
+        res.json(req.session.currentUser)
       } else {
         res.json('Password does not match')
         console.log('password does not match');
