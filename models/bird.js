@@ -7,11 +7,13 @@ const birdSchema = new mongoose.Schema({
   name: {type:String, required:true},
   scientificName: {type:String, required:true},
   image: {type:String, required:true},
-  location: {type: String, required:true},
-  status: {type: String, required:true},
+  food: {type:String, required:true},
+  nesting: {type:String, required:true},
+  behavior: {type:String, required:true},
+  habitat: {type: String, required:true},
+  conservationStatus: {type: String, required:true},
+  region: String,
   description: {type: String, required:true},
-  // stats: [Stats.schema],
-  // user: String,
 })
 
 const Birds = mongoose.model('Bird', birdSchema)
