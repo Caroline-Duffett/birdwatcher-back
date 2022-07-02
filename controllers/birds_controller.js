@@ -4,17 +4,17 @@ const Birds = require('../models/bird.js') //schema
 const birdSeedData = require('../models/bird_seed_data.js') //seed data
 
 
-// Seed Data Route
-router.get('/seed', (req, res) => {
-  Birds.create(birdSeedData, (err, data) => {
-    if (err) {
-      console.log(req.body);
-      console.log(err);
-    } else {
-      res.json(data)
-    }
-  })
-})
+// // Seed Data Route
+// router.get('/seed', (req, res) => {
+//   Birds.create(birdSeedData, (err, data) => {
+//     if (err) {
+//       console.log(req.body);
+//       console.log(err);
+//     } else {
+//       res.json(data)
+//     }
+//   })
+// })
 
 
 // Create Route
