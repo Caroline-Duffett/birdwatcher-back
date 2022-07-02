@@ -58,7 +58,7 @@ sessions.post('/sessions', (req, res) => {
 sessions.delete('/sessions', (req, res) => {
   req.session.destroy(() => {
     res.json('logged out')
-    console.log('logged out');
+    console.log('logged out backend');
     console.log(req.session);
   })
 })
