@@ -4,7 +4,8 @@ module.exports = [
   {
     name: 'Cerulean Warbler',
     scientificName: 'Setophaga cerulea',
-    image: 'https://www.allaboutbirds.org/guide/assets/photo/297038371-480px.jpg',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/297038371-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/297039241-1280px.jpg',
     food: 'Insects',
     nesting: 'Tree',
     behavior: 'Foliage Cleaner',
@@ -16,7 +17,8 @@ module.exports = [
   {
     name: 'Barn Owl',
     scientificName: 'Tyto alba',
-    image: 'https://www.allaboutbirds.org/guide/assets/photo/297342281-480px.jpg',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/297342281-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/63738021-1280px.jpg',
     food: 'Mammals',
     nesting: 'Building',
     behavior: 'Aerial dive',
@@ -28,7 +30,8 @@ module.exports = [
   {
     name: 'Northern Cardinal',
     scientificName: 'Cardinalis cardinalis',
-    image: 'https://www.allaboutbirds.org/guide/assets/photo/297087301-480px.jpg',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/297087301-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/63667311-1280px.jpg',
     food: 'Seeds',
     nesting: 'Shrub',
     behavior: 'Ground Forager',
@@ -40,7 +43,8 @@ module.exports = [
   {
     name: 'Bald Eagle',
     scientificName: 'Haliaeetus leucocephalus',
-    image: 'https://www.allaboutbirds.org/guide/assets/photo/306062281-480px.jpg',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/306062281-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/60329441-1280px.jpg',
     food: 'Fish',
     nesting: 'Tree',
     behavior: 'Soaring',
@@ -52,7 +56,8 @@ module.exports = [
   {
     name: 'American White Pelican',
     scientificName: 'Pelecanus erythrorhynchos',
-    image: 'https://www.allaboutbirds.org/guide/assets/photo/304461551-480px.jpg',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/304461551-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/304461341-1280px.jpg',
     food: 'Fish',
     nesting: 'Ground',
     behavior: 'Dabbler',
@@ -64,7 +69,8 @@ module.exports = [
   {
     name: 'American Goldfinch',
     scientificName: 'Spinus tristis',
-    image: 'https://www.allaboutbirds.org/guide/assets/photo/306710541-480px.jpg',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/306710541-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/306710711-1280px.jpg',
     food: 'Seeds',
     nesting: 'Shrub',
     behavior: 'Foliage gleaner',
@@ -76,7 +82,8 @@ module.exports = [
   {
     name: 'Great Blue Heron',
     scientificName: 'Ardea herodias',
-    image: 'https://www.allaboutbirds.org/guide/assets/photo/304479371-480px.jpg',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/304479371-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/60314291-1280px.jpg',
     food: 'Fish',
     nesting: 'Tree',
     behavior: 'Stalking',
@@ -88,7 +95,8 @@ module.exports = [
   {
     name: 'Pacific Loon',
     scientificName: 'Gavia pacifica',
-    image: 'https://www.allaboutbirds.org/guide/assets/photo/308026491-480px.jpg',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/308026491-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/308033921-1280px.jpg',
     food: 'Fish',
     nesting: 'Ground',
     behavior: 'Surface dive',
@@ -100,7 +108,8 @@ module.exports = [
   {
     name: 'Tufted Titmouse',
     scientificName: 'Baeolophus bicolor',
-    image: 'https://www.allaboutbirds.org/guide/assets/photo/302627281-480px.jpg',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/302627281-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/302627281-1280px.jpg',
     food: 'Insects',
     nesting: 'Cavity',
     behavior: 'Foliage gleaner',
@@ -112,7 +121,8 @@ module.exports = [
   {
     name: 'Red-winged Blackbird',
     scientificName: 'Agelaius phoeniceus',
-    image: 'https://www.allaboutbirds.org/guide/assets/photo/306392131-480px.jpg',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/306392131-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/63744301-1280px.jpg',
     food: 'Insects',
     nesting: 'Shrub',
     behavior: 'Ground Forager',
