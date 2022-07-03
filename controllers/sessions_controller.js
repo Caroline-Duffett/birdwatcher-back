@@ -5,9 +5,10 @@ const Users = require('../models/user.js')
 
 //Get current user
 sessions.get('/sessions', (req, res) => {
+  console.log(req.session);
   res.json({ currentUser: req.session.currentUser })
   console.log('got user backend');
-  console.log(req.session);
+  //console.log(req.session);
 })
 
 
