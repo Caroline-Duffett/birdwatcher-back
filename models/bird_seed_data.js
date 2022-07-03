@@ -131,6 +131,139 @@ module.exports = [
     region: 'Most of North America',
     description: 'Male Red-winged Blackbirds are hard to mistake. They are an even glossy black with red-and-yellow shoulder badges. Females are crisply streaked and dark brownish overall, paler on the breast and often show a whitish eyebrow.'
   },
+  {
+    name: 'Scarlet Tanager',
+    scientificName: 'Piranga olivacea',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/297081931-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/67449621-1280px.jpg',
+    food: 'Insects',
+    nesting: 'Tree',
+    behavior: 'Foliage gleaner',
+    habitat: 'Forests',
+    conservationStatus: 'Low concern',
+    region: 'East half of North America',
+    description: 'In spring and summer, adult males are an unmistakable, brilliant red with black wings and tails. Females and fall immatures are olive-yellow with darker olive wings and tails. After breeding, adult males molt to female-like plumage, but with black wings and tail.'
+  },
+  {
+    name: 'Wood Duck',
+    scientificName: 'Aix sponsa',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/65533521-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/299868091-1280px.jpg',
+    food: 'Plants',
+    nesting: 'Cavity',
+    behavior: 'Dabbler',
+    habitat: 'Wetlands',
+    conservationStatus: 'Low concern',
+    region: 'Most of North America',
+    description: 'In good light, males have a glossy green head cut with white stripes, a chestnut breast and buffy sides. In low or harsh light, they will look dark overall with paler sides. Females are gray-brown with white-speckled breast. In eclipse plumage (late summer), males lose their pale sides and bold stripes, but retain their bright eye and bill. Juveniles are very similar to females.'
+  },
+  {
+    name: 'Long-tailed Duck',
+    scientificName: 'Clangula hyemalis',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/302051251-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/302052591-1280px.jpg',
+    food: 'Aquatic invertebrates',
+    nesting: 'Ground',
+    behavior: 'Surface dive',
+    habitat: 'Wetlands',
+    conservationStatus: 'Steep decline',
+    region: 'The tundra and taiga regions of the arctic and winters along the northern coastlines of the Atlantic and Pacific Oceans.',
+    description: 'Males in winter are mostly white and black: the head is white with a large dark patch on the neck. The breast and body are dark with white plumes covering the back. The bill is mostly black with a pink band. Males in summer are infrequently seen away from the Arctic, but are roughly the reverse of their winter plumage, with a dark head, neck, and body, and a white face patch. Females and young males are smudgy brown on the body with a white face, a brown crown and cheek patch, and a dark bill.'
+  },
+  {
+    name: 'Ruddy Duck',
+    scientificName: 'Oxyura jamaicensis',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/302124271-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/302124271-1280px.jpg',
+    food: 'Aquatic invertebrates',
+    nesting: 'Ground',
+    behavior: 'Surface dive',
+    habitat: 'Marshes',
+    conservationStatus: 'Low concern',
+    region: 'North American and the western coast of South America',
+    description: 'Male Ruddy Ducks have blackish caps that contrast with bright white cheeks. In summer, they have rich chestnut bodies with bright blue bills. In winter, they are dull gray-brown above and paler below with dull gray bills. Females and first-year males are brownish, somewhat like winter males but with a blurry stripe across the pale cheek patch. In flight, Ruddy Ducks show solidly dark tops of the wings.'
+  },
+  {
+    name: 'Harlequin Duck',
+    scientificName: 'Histrionicus histrionicus',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/63898051-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/63898021-1280px.jpg',
+    food: 'Aquatic invertebrates',
+    nesting: 'Ground',
+    behavior: 'Surface dive',
+    habitat: 'Rivers and streams',
+    conservationStatus: 'Low concern',
+    region: 'The Atlantic Coast and the Pacific Coast of North America',
+    description: 'Breeding male Harlequin Ducks are a spectacular slate blue with white stripes and chestnut sides. The head is elaborately marked with a white crescent in front of the eye, and chestnut highlights on the brow. Females are overall grayish-brown, with white around the bill and eye, and a neat white spot on the rear of the cheek.'
+  },
+  {
+    name: 'American Robin',
+    scientificName: 'Turdus migratorius',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/303441381-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/303441781-1280px.jpg',
+    food: 'Insects',
+    nesting: 'Tree',
+    behavior: 'Ground forager',
+    habitat: 'Open woodlands',
+    conservationStatus: 'Low concern',
+    region: 'Most of North America',
+    description: 'American Robins are gray-brown birds with warm orange underparts and dark heads. In flight, a white patch on the lower belly and under the tail can be conspicuous. Compared with males, females have paler heads that contrast less with the gray back.'
+  },
+  {
+    name: 'Red-crowned Parrot',
+    scientificName: 'Amazona viridigenalis',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/414766991-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/414766361-1280px.jpg',
+    food: 'Fruit',
+    nesting: 'Cavity',
+    behavior: 'Foliage gleaner',
+    habitat: 'Forests',
+    conservationStatus: 'Red watch list',
+    region: 'They are native to a small region of northeastern Mexico and South Texas',
+    description: 'Green overall, palest on the cheek, with a red crown and a bluish wash behind the cheek. The tail has a yellowish-green band; the wings show dark blue tips to flight feathers, and red secondaries. Adult female is similar but with red only on the forecrown. Juveniles are similar but have only a narrow band of red at the base of the bill.'
+  },
+  {
+    name: 'Mute Swan',
+    scientificName: 'Cygnus olor',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/59954151-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/59954111-1280px.jpg',
+    food: 'Plants',
+    nesting: 'Ground',
+    behavior: 'Dabbler',
+    habitat: 'Lakes and ponds',
+    conservationStatus: 'Low concern',
+    region: 'Native to Europe and eastern Asia. They can be found in North America in the Pacific Northwest and from New England south to Virginia.',
+    description: 'Mute Swans are entirely white with a bill that is orange with a black base. Young swans (cygnets) may be dusky brown-gray all over, with a gray-black bill.'
+  },
+  {
+    name: 'Tundra Swan',
+    scientificName: 'Cygnus columbianus',
+    imageIndex: 'https://www.allaboutbirds.org/guide/assets/photo/59956021-480px.jpg',
+    imageShow: 'https://www.allaboutbirds.org/guide/assets/photo/59956011-1280px.jpg',
+    food: 'Plants',
+    nesting: 'Ground',
+    behavior: 'Dabbler',
+    habitat: 'Lakes and ponds',
+    conservationStatus: 'Low concern',
+    region: 'They nest in the arctic, and migrate for the winter either east to the Atlantic Flyway to the Chesapeake area, or west to California.',
+    description: 'Tundra Swans have entirely white plumage. The bill is mostly black and usually has a yellow spot at the base. The legs and feet are black. Immature birds are gray-tinged on the wings, head, and neck.'
+  },
 
 
 ]
+
+
+
+// {
+//   name: '',
+//   scientificName: '',
+//   imageIndex: '',
+//   imageShow: '',
+//   food: '',
+//   nesting: '',
+//   behavior: '',
+//   habitat: '',
+//   conservationStatus: '',
+//   region: '',
+//   description: ''
+// },
