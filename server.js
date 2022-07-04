@@ -37,7 +37,7 @@ app.use(cors())
 
 
 //___________________
-// CRUD Routes
+// Routes
 //___________________
 app.use(birdsController)
 app.use(usersController)
