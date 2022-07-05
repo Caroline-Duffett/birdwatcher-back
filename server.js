@@ -12,7 +12,6 @@ require('dotenv').config()
 // Controllers
 //___________________
 const birdsController = require('./controllers/birds_controller.js')
-const usersController = require('./controllers/users_controller.js')
 
 
 //___________________
@@ -40,7 +39,6 @@ app.use(cors())
 // Routes
 //___________________
 app.use(birdsController)
-app.use(usersController)
 
 // redirect for heroku
 app.get('/', (req, res) => {
