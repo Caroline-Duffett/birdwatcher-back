@@ -1,4 +1,4 @@
-// All photos and information came from: https://www.allaboutbirds.org
+// All photos and information came from: https://www.allaboutbirds.org and the birds Wikipedia pages
 
 module.exports = [
   {
@@ -253,7 +253,7 @@ module.exports = [
 ]
 
 
-
+// To add on to the seed data
 // {
 //   name: '',
 //   scientificName: '',
